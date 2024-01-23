@@ -1,4 +1,4 @@
----
+4---
 - hosts: testserver
   become: true
   tasks:
@@ -12,4 +12,4 @@
     command: sudo systemctl start docker
 
   - name: deploy php web application
-    command: sudo docker run -itd -p  8083:80 vijayalakshmipushpendra/php-registration:1.0
+    command: sudo docker run -itd -p  8084:80 vijayalakshmipushpendra/php-registration:1.0
