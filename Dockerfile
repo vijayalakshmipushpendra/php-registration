@@ -12,9 +12,9 @@ RUN chown -R www-data:www-data /var/www/html
  
 EXPOSE 80
 
-ENV DB_HOST=database-1.cjugeuoq3svl.ap-south-1.rds.amazonaws.com
-ENV DB_USER=admin
-ENV DB_PASS=admin123
-ENV DB_NAME=register
+ENV DB_HOST=endpoint of database
+ENV DB_USER=username of datbase
+ENV DB_PASS=password of database
+ENV DB_NAME=name of database
 
 CMD ["apache2-foreground"]
